@@ -109,6 +109,7 @@ font = ImageFont.load_default()
 # Alternatively load a TTF font.  Make sure the .ttf font file is in the same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 # font = ImageFont.truetype('Minecraftia.ttf', 8)
+watchdog = True
 
 try:
     while True:
@@ -133,12 +134,13 @@ try:
         draw.text((x, top),       "IP: " + str(IP),  font=font, fill=255)
         draw.text((x, top+8),     str(CPU), font=font, fill=255)
         draw.text((x, top+16),    "%.3f V" % ina.supply_voltage() + "  %.3f mA" % ina.current(),  font=font, fill=255)
-        draw.text((x, top+25),    "TEMP: " + str(CPU_temp) + "C",  font=font, fill=255)
+        draw.text((x, top+25),    "TEMP: " + str(CPU_temp) + "C" +"  " + str(watchdog),  font=font, fill=255)
 
         # Display image.
         disp.image(image)
         disp.display()
         time.sleep(5)
+        watchdog = not watchdog
 
 except KeyboardInterrupt: # trap a CTRL+C keyboard interrupt
     disp.clear()
