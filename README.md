@@ -11,8 +11,8 @@ Breadboard
 
 Connection
 Raspberry Pi 
-3.3 V    OLED, INA21 Vcc
-Ground   OLED, INA21 Ground
-GPIO 14  OLED RST
-SCL      OLED, INA21 SCL
-SDA      OLED, INA21 SDA
+3.3 V    OLED, INA21 Vcc<br>
+Ground   OLED, INA21 Ground<br>
+GPIO 14  OLED RST<br>
+SCL      OLED, INA21 SCL<br>
+SDA      OLED, INA21 SDA<br>
