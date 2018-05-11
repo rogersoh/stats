@@ -9,8 +9,8 @@ OLED 128x32
 INA21
 Breadboard
 
-Connection
-Raspberry Pi 
+Connection<br>
+Raspberry Pi <br>
 3.3 V    OLED, INA21 Vcc<br>
 Ground   OLED, INA21 Ground<br>
 GPIO 14  OLED RST<br>
