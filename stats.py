@@ -139,7 +139,7 @@ try:
         # Display image.
         disp.image(image)
         disp.display()
-        time.sleep(5)
+        time.sleep(1)
         watchdog = not watchdog
 
 except KeyboardInterrupt: # trap a CTRL+C keyboard interrupt
